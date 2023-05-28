@@ -9,7 +9,6 @@ import java.net.URL;
 
 public class ConfigurationWebDriver {
     static WebDriver driver = null;
-
     public static WebDriver createDriver(Webdrivers webdrivers) {
         switch (webdrivers) {
             case CHROME:

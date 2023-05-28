@@ -15,6 +15,7 @@ public class TestHillel extends BaseClass {
     static By search = new By.ByXPath("//li[contains(@data-entry-id,\"129290\")]");
     static By agree = new By.ByXPath("//span[contains(@class,\"checkbox_checkmark\")]");
 
+
     public static void main(String[] args) throws InterruptedException {
         driver.get(url);
        WebElement consultButton = driver.findElement(consultation);
