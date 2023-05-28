@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ab29c3b-25ac-452f-9b3c-ee4ec01a8dbb" name="Changes" comment="commit form2" />
+    <list default="true" id="2ab29c3b-25ac-452f-9b3c-ee4ec01a8dbb" name="Changes" comment="commit form" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -115,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685286162797</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="commit form">
+      <created>1685286443449</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1685286443449</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -130,8 +137,8 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="commit form" />
     <MESSAGE value="commit form2" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit form2" />
+    <MESSAGE value="commit form" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit form" />
   </component>
 </project>
