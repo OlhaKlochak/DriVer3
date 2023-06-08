@@ -27,10 +27,6 @@ public class TestMainPage extends BaseClass {
 
         MainPage = new MainPageObject(driver);
     }
-        @After
-       public void afterMetod() throws InterruptedException {
-        Thread.sleep(3000);
-    }
 
     @Test
     public void test1() {
@@ -51,7 +47,6 @@ public class TestMainPage extends BaseClass {
     public void test4(){
         MainPage.ScrollTobutton();
     }
-
 
     @Test
     public void test5() {

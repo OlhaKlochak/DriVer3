@@ -23,7 +23,7 @@ public class MainPageObject {
 
     private By ButtonCoachesNames = new By.ByXPath("//button[@id='coachesShowAllButton']");
 
-    @FindBy(xpath = "//ul[@class='coach-list coaches_list']")
+    @FindBy(xpath = "//p[@class='coach-card_name']")
     List<WebElement> CoachList;
 
 
@@ -45,18 +45,26 @@ public class MainPageObject {
 
     public WebElement ScrollTobutton() {
         Util.ScrollToelement(driver, By.xpath("//button[@id='coachesShowAllButton']"));
+//        WebElement ButtonCoachesName = new WebDriverWait(driver, Duration.ofSeconds(300))
+//                .until(ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='coachesShowAllButton']")));
+        new WebDriverWait(driver, Duration.ofSeconds(30)).until(ExpectedConditions.
+                elementToBeClickable(By.xpath("//button[@id='coachesShowAllButton']")));
         return driver.findElement(ButtonCoachesNames);
 
     }
-    public WebElement getButtonCoachesNames() {
+    public WebElement getButtonCoachesNames(){
         return driver.findElement(ButtonCoachesNames);
+
     }
-    public void getCoachList() {
+    public List<String> getCoachList() {
         List<WebElement> elements = driver.findElements(By.xpath("//p[@class='coach-card_name']"));
+        List<String> CoachList = new ArrayList<String>();
+
         for (WebElement element : elements) {
             System.out.println(element.getText());
-
+            CoachList.add(element.getText());
         }
+        return CoachList;
     }
     }
 
